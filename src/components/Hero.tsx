@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { fadeUp, staggerContainer } from '@/lib/animations';
 import { Button } from './ui/button';
 import { SparkleIcon } from 'lucide-react';
+import SectionHeader from './SectionHeader';
+
 const Hero = () => {
   return (
     <motion.section
@@ -12,24 +14,19 @@ const Hero = () => {
       className='pt-20'
       id='hero'
     >
-      <motion.p
-        variants={fadeUp}
-        className='flex items-center justify-center py-1 gap-2 border border-neutral-600 rounded-sm w-32'
-      >
-        <SparkleIcon size={15} />
-        <span>Introduction</span>
-      </motion.p>
+      <SectionHeader subtitle='Introduction' />
+
       <motion.h1
         variants={fadeUp}
         className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'
       >
-        I'm <span className='text-primary'>Rudra </span>
-        UI/UX designer and frontend developer
+        I'm <span className='text-primary'>Rudra </span>a Full Stack Developer
+        crafting seamless digital experiences
       </motion.h1>
 
       <motion.div
         variants={fadeUp}
-        className='mt-5 flex gap-2 '
+        className='mt-5 flex gap-2'
       >
         <Button asChild>
           <a href='#project'>My Projects</a>

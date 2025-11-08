@@ -86,27 +86,42 @@ const socialLinks: LinksType[] = [
 const projectsData: ProjectType[] = [
   {
     imgSrc: '/images/project-ph-1.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    title: 'Event Management Platform',
+    tags: [
+      'Next.js',
+      'Node.js',
+      'Stripe',
+      'Tailwind CSS',
+      'JWT Auth',
+      'MongoDB',
+    ],
+    projectLink: 'https://github.com/rudragaur-01/event-platform',
   },
   {
     imgSrc: '/images/project-ph-2.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    title: 'Budget Manager API',
+    tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Mongoose', 'REST API'],
+    projectLink: 'https://github.com/rudragaur-01',
   },
   {
     imgSrc: '/images/project-ph-3.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    title: 'CultureNOW – Digital Museum',
+    tags: [
+      'Next js',
+      'Redux',
+      'REST API',
+      'Performance Optimization',
+      'GCP',
+      'Stripe',
+      'Tailwind',
+    ],
+    projectLink: 'https://culturenow.org/',
   },
   {
     imgSrc: '/images/project-ph-4.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    title: 'Kokoro Financial Platform',
+    tags: ['Next.js', 'Nest.js', 'MUI', 'Postman'],
+    projectLink: 'https://github.com/rudragaur-01',
   },
 ];
 
@@ -133,16 +148,22 @@ const education: ExperienceType[] = [
 
 const experience: ExperienceType[] = [
   {
-    year: '2021 – 2022',
-    title: 'Frontend Developer Intern',
-    institute: 'PixelForge Studio',
-    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    year: 'Aug 2024 – Oct 2024',
+    title: 'Full Stack Developer Intern',
+    institute: 'Frisson Devhub, Noida',
+    desc: 'Assisted in building and testing core modules using React and Chakra UI, improving design consistency and responsiveness for client projects.',
   },
   {
-    year: '2022 – Present',
-    title: 'UI Engineer',
-    institute: 'Freelance / Remote Work',
-    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
+    year: 'Nov 2024 – Present',
+    title: 'Full Stack Developer',
+    institute: 'Frisson Devhub, Noida',
+    desc: 'Developing scalable web applications using React, Next.js, Node.js, and Strapi CMS. Integrated Stripe payments and optimized API performance to enhance user engagement.',
+  },
+  {
+    year: '2023 – Present',
+    title: 'Freelance Developer',
+    institute: 'Remote / Client Projects',
+    desc: 'Built full-stack applications such as event management and financial dashboards using modern frameworks like Next.js, Tailwind CSS, and Express.js.',
   },
 ];
 
@@ -186,7 +207,7 @@ const services: ServiceType[] = [
     title: 'Brand Identity',
     desc: 'I craft modern visual identities that help brands stand out through strong typography, colors, and minimal design.',
     projects: '32 Projects',
-    icon: <Palette className='h-6 w-6 text-green-400'/>
+    icon: <Palette className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'UI/UX Design',
@@ -216,16 +237,16 @@ const services: ServiceType[] = [
 
 const statsData: StatsType[] = [
   {
-    number: '30+',
+    number: '10+',
+    label: 'Completed Projects',
+  },
+  {
+    number: '1+',
+    label: 'Years of Experience',
+  },
+  {
+    number: '5+',
     label: 'Happy Clients',
-  },
-  {
-    number: '05+',
-    label: 'Years Of Experience',
-  },
-  {
-    number: '50+',
-    label: 'Projects Done',
   },
 ];
 

@@ -10,6 +10,7 @@
   "singleAttributePerLine": true,
   "arrowParens": "always",
   "endOfLine": "lf",
+
   "overrides": [
     {
       "files": "*.html",
