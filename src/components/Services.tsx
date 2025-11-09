@@ -24,7 +24,7 @@ const Services = () => {
         whileInView='visible'
         viewport={{ once: true, amount: 0.3 }}
         variants={staggerContainer(0.5)}
-        className='grid md:grid-cols-2 gap-10 mt-10'
+        className='grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12 mt-12 xl:mt-16 2xl:mt-20'
       >
         {services.map((service) => (
           <motion.div

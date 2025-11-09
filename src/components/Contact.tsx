@@ -50,9 +50,9 @@ const Contact = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className='w-full mx-auto space-y-4 mt-10'
+          className='w-full mx-auto space-y-6 xl:space-y-8 2xl:space-y-10 mt-12 xl:mt-16 2xl:mt-20'
         >
-          <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
+          <div className='grid grid-cols-1 gap-6 xl:gap-8 2xl:gap-10 md:grid-cols-2'>
             <FormField
               control={form.control}
               name='name'
@@ -139,6 +139,7 @@ const Contact = () => {
           <Button
             type='submit'
             size='lg'
+            className='text-base xl:text-lg 2xl:text-xl px-8 xl:px-10 2xl:px-12 py-6 xl:py-7 2xl:py-8 mt-4 xl:mt-6 2xl:mt-8'
           >
             Send Message
           </Button>

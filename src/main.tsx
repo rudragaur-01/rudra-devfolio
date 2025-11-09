@@ -1,29 +1,42 @@
-import { StrictMode } from 'react';
+import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import '@/index.css';
 import { App } from '@/App';
-import Sidebar from '@/components/Sidebar';
 import FloatingMenu from '@/components/FloatingMenu';
 import Profile from '@/components/Profile';
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <div className='min-h-screen lg:flex lg:justify-start lg:items-start lg:gap-10 mx-auto'>
-      <Sidebar />
 
-      {/* Profile Sidebar */}
-      <div className='hidden lg:block lg:sticky lg:top-0 my-10 lg:w-100 2xl:w-96 border border-neutral-600 bg-neutral-900 text-white p-6 rounded-lg'>
-        <Profile />
-      </div>
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 
-      {/* Main Content */}
-      <div className='flex-1'>
-        <App />
-      </div>
+const Root = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
 
-      {/* Floating Menu */}
-      <div className='lg:w-16 xl:w-24 2xl:w-32'>
-        <FloatingMenu />
+    if (window.location.hash && window.history.replaceState) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
+
+  return (
+    <div className='min-h-screen w-full max-w-[1920px] mx-auto flex flex-col'>
+      <FloatingMenu />
+
+      <div className='flex-1 w-full lg:flex lg:justify-center lg:items-start lg:gap-8 xl:gap-10 px-4 lg:px-6 xl:px-8 pt-20 sm:pt-24 md:pt-28 lg:pt-32 xl:pt-36 2xl:pt-40'>
+        <div className='hidden lg:block lg:sticky lg:top-20 xl:top-24 2xl:top-28 w-80 xl:w-96 flex-shrink-0 border border-[var(--portfolio-border-primary)] bg-[var(--portfolio-bg-secondary)]/95 backdrop-blur-sm text-[var(--portfolio-text-primary)] p-6 xl:p-8 rounded-xl shadow-xl h-fit'>
+          <Profile />
+        </div>
+
+        <div className='flex-1 min-w-0 max-w-7xl'>
+          <App />
+        </div>
       </div>
     </div>
+  );
+};
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <Root />
   </StrictMode>,
 );

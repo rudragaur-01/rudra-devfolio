@@ -19,7 +19,7 @@ const Projects = () => {
         title='My Featured Projects'
       />
       <motion.div
-        className='grid md:grid-cols-2 gap-10 mt-10'
+        className='grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12 mt-12 xl:mt-16 2xl:mt-20'
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.3 }}

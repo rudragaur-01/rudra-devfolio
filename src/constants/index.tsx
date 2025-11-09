@@ -1,11 +1,3 @@
-/**
- * @copyright 2025 codewithsadee
- * @license Apache-2.0
- */
-
-/**
- * Types
- */
 import type {
   ExperienceType,
   LinksType,
@@ -16,9 +8,6 @@ import type {
   ToolsType,
 } from '@/types';
 
-/**
- * Assets
- */
 import {
   Briefcase,
   Facebook,

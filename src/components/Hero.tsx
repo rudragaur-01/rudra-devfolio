@@ -11,27 +11,26 @@ const Hero = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
-      className='pt-10 md:pt-5:'
+     
       id='hero'
     >
       <SectionHeader subtitle='Introduction' />
 
       <motion.h1
         variants={fadeUp}
-        className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'
+        className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-semibold capitalize mt-6 xl:mt-8 2xl:mt-10 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl leading-tight xl:leading-tight 2xl:leading-tight'
       >
-        I'm <span className='text-primary'>Rudra </span>a Full Stack Developer
-        crafting seamless digital experiences
+        I'm <span className='text-primary'>Rudra </span>a Full Stack Developer crafting seamless digital experiences
       </motion.h1>
 
       <motion.div
         variants={fadeUp}
-        className='mt-5 flex gap-2'
+        className='mt-8 xl:mt-10 2xl:mt-12 flex gap-4 xl:gap-6'
       >
-        <Button asChild>
+        <Button asChild className='text-base xl:text-lg 2xl:text-xl px-6 xl:px-8 2xl:px-10 py-6 xl:py-7 2xl:py-8'>
           <a href='#project'>My Projects</a>
         </Button>
-        <Button variant='outline'>Download CV</Button>
+        <Button variant='outline' className='text-base xl:text-lg 2xl:text-xl px-6 xl:px-8 2xl:px-10 py-6 xl:py-7 2xl:py-8'>Download CV</Button>
       </motion.div>
     </motion.section>
   );

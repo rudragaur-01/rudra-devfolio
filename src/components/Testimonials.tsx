@@ -49,10 +49,10 @@ const Testimonials = () => {
             />
             <div className='flex-1 space-y-4'>
               <div>
-                <h3 className='text-lg font-medium text-white'>
+                <h3 className='text-lg xl:text-xl 2xl:text-2xl font-medium text-white'>
                   {testimonials[curSlide].name}
                 </h3>
-                <p className='text-sm text-neutral-400 '>
+                <p className='text-sm xl:text-base 2xl:text-lg text-neutral-400 '>
                   {testimonials[curSlide].role}
                 </p>
               </div>
@@ -60,17 +60,17 @@ const Testimonials = () => {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <StarIcon
                     key={i}
-                    size={16}
+                    className='size-4 xl:size-5 2xl:size-6'
                     fill='currentColor'
                   />
                 ))}
               </div>
-              <p className='text-neutral-300 leading-relaxed'>
+              <p className='text-neutral-300 text-base xl:text-lg 2xl:text-xl leading-relaxed'>
                 {testimonials[curSlide].text}
               </p>
               <a
                 href={testimonials[curSlide].link}
-                className='inline-flex items-center gap-1 text-sm font-medium hover:text-green-400 text-neutral-400 transition'
+                className='inline-flex items-center gap-1 text-sm xl:text-base 2xl:text-lg font-medium hover:text-green-400 text-neutral-400 transition'
               >
                 Project
               </a>

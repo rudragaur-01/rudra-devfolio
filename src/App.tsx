@@ -33,7 +33,7 @@ export const App = () => {
   }, []);
 
   return (
-    <div className='flex flex-col container mx-auto px-6  sm:px-10 max-w-7xl  '>
+    <div className='flex flex-col w-full '>
       <Hero />
       <Stats />
       <Projects />

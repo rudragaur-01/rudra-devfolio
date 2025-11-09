@@ -1,18 +1,16 @@
 import type { Variants } from 'framer-motion';
 
-// Container for staggering animations
 export const staggerContainer = (delay = 0): Variants => ({
   hidden: {},
   visible: {
     transition: {
       delayChildren: delay,
-      staggerChildren: 0.25, // slightly faster for better flow
+      staggerChildren: 0.25,
       ease: 'easeInOut',
     },
   },
 });
 
-// Generic fade-up motion (great for text and cards)
 export const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -22,7 +20,6 @@ export const fadeUp: Variants = {
   },
 };
 
-// Optional subtle scale for hero titles or section headers
 export const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: {
