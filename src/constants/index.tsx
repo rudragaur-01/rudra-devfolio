@@ -148,22 +148,16 @@ const education: ExperienceType[] = [
 
 const experience: ExperienceType[] = [
   {
-    year: 'Aug 2024 – Oct 2024',
-    title: 'Full Stack Developer Intern',
-    institute: 'Frisson Devhub, Noida',
-    desc: 'Assisted in building and testing core modules using React and Chakra UI, improving design consistency and responsiveness for client projects.',
+    year: '2021 – 2022',
+    title: 'Frontend Developer Intern',
+    institute: 'PixelForge Studio',
+    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
   },
   {
-    year: 'Nov 2024 – Present',
-    title: 'Full Stack Developer',
-    institute: 'Frisson Devhub, Noida',
-    desc: 'Developing scalable web applications using React, Next.js, Node.js, and Strapi CMS. Integrated Stripe payments and optimized API performance to enhance user engagement.',
-  },
-  {
-    year: '2023 – Present',
-    title: 'Freelance Developer',
-    institute: 'Remote / Client Projects',
-    desc: 'Built full-stack applications such as event management and financial dashboards using modern frameworks like Next.js, Tailwind CSS, and Express.js.',
+    year: '2022 – Present',
+    title: 'UI Engineer',
+    institute: 'Freelance / Remote Work',
+    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
   },
 ];
 
@@ -255,21 +249,21 @@ const testimonials: TestimonialsType[] = [
     name: 'Alex Tomato',
     role: 'Brand Manager at Instant Design',
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
-    text: 'Working with David was an absolute pleasure. His attention to detail, creative insights, and ability to translate complex ideas into stunning visuals truly set him apart. He consistently went above and beyond to ensure the project exceeded expectations.',
+    text: 'Rudra’s attention to detail and ability to turn complex ideas into polished solutions is exceptional. He consistently exceeded expectations and delivered high-quality work.',
     link: '#',
   },
   {
     name: 'Sara Bloom',
     role: 'Founder at Bloom Agency',
     image: 'https://randomuser.me/api/portraits/women/65.jpg',
-    text: 'David brought my brand vision to life better than I could have imagined. He is not only professional and highly skilled but also incredibly responsive and collaborative. Every aspect of the project was handled with precision and creativity.',
+    text: 'Working with Rudra was seamless. He is professional, responsive, and highly skilled, bringing my brand vision to life with precision and creativity.',
     link: '#',
   },
   {
     name: 'John Park',
     role: 'CEO at PixelFlow',
     image: 'https://randomuser.me/api/portraits/men/45.jpg',
-    text: 'From UI/UX design to front-end implementation, David handled every detail flawlessly. His problem-solving skills, innovative approach, and dedication made the entire process smooth and enjoyable. I would highly recommend him for any design-driven project.',
+    text: 'Rudra handled every detail flawlessly, from UI/UX design to front-end implementation. His problem-solving skills and dedication made the project smooth and enjoyable.',
     link: '#',
   },
 ];

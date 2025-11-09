@@ -2,72 +2,85 @@ import { Button } from './ui/button';
 import { socialLinks } from '@/constants';
 
 const Profile = () => {
+  const profileData = {
+    name: 'Rudra Gaur',
+    title: 'Full Stack Developer',
+    specialization:
+      'Frontend & Backend Development, UI/UX Design, API Development, Payment Integration',
+    techStack: [
+      {
+        label: 'Frontend',
+        value: 'React.js, Next.js, Tailwind CSS, Chakra UI',
+      },
+      {
+        label: 'Backend',
+        value: 'Node.js, Express.js, JWT Authentication, Strapi CMS',
+      },
+      {
+        label: 'Database',
+        value: 'PostgreSQL',
+      },
+      {
+        label: 'Tools & Platforms',
+        value: 'Stripe, Sitecore (CH1), Git, Agile Workflows',
+      },
+    ],
+    location: 'Delhi, India',
+  };
+
   return (
-    <aside
-      className='w-full max-w-md mx-auto 
-                 bg-neutral-900 border border-neutral-700 
-                 rounded-2xl p-6 text-white 
-                 flex flex-col items-center gap-5 
-                 shadow-lg shadow-neutral-800/40 
-                 lg:sticky lg:top-8 lg:h-fit'
-    >
-      {/* Profile Image */}
+    <div className='flex flex-col gap-6'>
+      <div className=' flex items-center justify-between gap-x-10'>
+        <h1 className=' text-3xl font-bold'>{profileData.name}</h1>
+        <p className='text-sm'>{profileData.title}</p>
+      </div>
+
       <img
-        src='/avatar.jpg'
-        alt='Portrait of Rudra Gaur'
-        className='w-40 h-40 rounded-full object-cover border-2 border-neutral-700 shadow-md'
+        src='/profilePic.jpg'
+        alt='Profile Pic'
+        className=' rounded-2xl object-cover
+             lg:h-96 lg:w-auto
+             xl:h-[400px]'
       />
 
-      {/* Name & Role */}
-      <div className='text-center space-y-1'>
-        <h1 className='text-2xl font-bold tracking-tight'>Rudra Gaur</h1>
-        <p className='text-sm text-neutral-400'>Full Stack Developer</p>
+      <div>
+        <p className='text-sm text-neutral-300'>Specialization:</p>
+        <p className='text-lg capitalize'>{profileData.specialization}</p>
       </div>
 
-      {/* Specialization */}
-      <div className='text-center mt-2 space-y-1'>
-        <p className='text-sm text-neutral-400 uppercase tracking-wide'>
-          Specialization
-        </p>
-        <p className='text-base text-neutral-200 leading-snug'>
-          Building modern, scalable, and user-centric web applications
-        </p>
+      <div>
+        <p className='text-sm text-neutral-300'>Tech Stack:</p>
+        <ul className='text-neutral-200 list-disc list-inside'>
+          {profileData.techStack.map(({ label, value }, idx) => (
+            <li key={idx}>
+              <strong>{label}:</strong> {value}
+            </li>
+          ))}
+        </ul>
       </div>
 
-      {/* Location */}
-      <div className='text-center mt-1 space-y-1'>
-        <p className='text-sm text-neutral-400 uppercase tracking-wide'>
-          Based In
-        </p>
-        <p className='text-base text-neutral-200'>Delhi, India</p>
+      <div>
+        <p className='text-sm text-neutral-300'>Based in:</p>
+        <p className='text-lg capitalize'>{profileData.location}</p>
       </div>
 
-      {/* Social Links */}
-      <div className='flex justify-center gap-4 pt-3'>
-        {socialLinks.map(({ icon: Icon, link }, i) => (
-          <a
-            key={i}
-            href={link}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='p-2 rounded-full border border-neutral-700 text-neutral-400 
-                       hover:text-primary hover:border-primary 
-                       transition-all duration-200'
-          >
-            <Icon className='size-5' />
-          </a>
-        ))}
+      <div className='flex gap-3 pt-2 text-neutral-500'>
+        {socialLinks.map((social, i) => {
+          const Icon = social.icon;
+          return (
+            <a
+              key={i}
+              href={social.link}
+              className='hover:text-primary border-2 border-neutral-500 p-2 rounded-full hover:border-primary transition duration-200'
+            >
+              <Icon className='size-6' />
+            </a>
+          );
+        })}
       </div>
 
-      {/* CTA Button */}
-      <Button
-        variant='outline'
-        className='mt-3 w-full text-sm sm:text-base font-medium rounded-xl 
-                   hover:bg-primary hover:text-white transition-colors duration-200'
-      >
-        Let’s Work Together!
-      </Button>
-    </aside>
+      <Button className='mt-4'>Let's Work!</Button>
+    </div>
   );
 };
 
