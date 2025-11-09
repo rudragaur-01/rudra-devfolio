@@ -12,7 +12,7 @@ const Resume = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
-      className='mt-30 scroll-mt-10'
+      className='mt-30 scroll-mt-10 3xl:pt-30'
       id='resume'
     >
       <SectionHeader
@@ -33,7 +33,9 @@ const Resume = () => {
           variants={fadeUp}
           className='mb-16 md:mb-0'
         >
-          <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-10 xl:mb-12 2xl:mb-14'>Education</h2>
+          <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-10 xl:mb-12 2xl:mb-14'>
+            Education
+          </h2>
           <div className='space-y-10 xl:space-y-12 2xl:space-y-14 border-l border-neutral-700 pl-6 xl:pl-8 2xl:pl-10'>
             {education.map((item, i) => (
               <ExpCard
@@ -44,7 +46,9 @@ const Resume = () => {
           </div>
         </motion.div>
         <motion.div variants={fadeUp}>
-          <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-10 xl:mb-12 2xl:mb-14'>Work Experience</h2>
+          <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-10 xl:mb-12 2xl:mb-14'>
+            Work Experience
+          </h2>
           <div className='space-y-10 xl:space-y-12 2xl:space-y-14 border-l border-border-700 pl-6 xl:pl-8 2xl:pl-10'>
             {experience.map((item, i) => (
               <ExpCard

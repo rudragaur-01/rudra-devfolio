@@ -10,7 +10,7 @@ const About = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
-      className='mt-30 scroll-mt-10'
+      className='mt-30 scroll-mt-10 3xl:pt-30'
       id='about'
     >
       <SectionHeader
@@ -65,7 +65,9 @@ const About = () => {
         variants={fadeUp}
         transition={{ delay: 0.2 }}
       >
-        <Button className='mt-8 xl:mt-10 2xl:mt-12 text-base xl:text-lg 2xl:text-xl px-6 xl:px-8 2xl:px-10 py-6 xl:py-7 2xl:py-8'>Contact Me</Button>
+        <Button className='mt-8 xl:mt-10 2xl:mt-12 text-base xl:text-lg 2xl:text-xl px-6 xl:px-8 2xl:px-10 py-6 xl:py-7 2xl:py-8'>
+          Contact Me
+        </Button>
       </motion.div>
     </motion.section>
   );

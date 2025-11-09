@@ -28,7 +28,7 @@ import {
 } from 'lucide-react';
 
 const navLinks: LinksType[] = [
-  { label: 'Home', link: '#hero', icon: Home },
+  { label: 'Home', link: '', icon: Home },
   {
     label: 'Projects',
     link: '#projects',

@@ -8,7 +8,7 @@ const Stats = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.8 }}
       variants={staggerContainer(0.6)}
-      className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 xl:gap-10 2xl:gap-12 mt-20 xl:mt-24 2xl:mt-28'
+      className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 xl:gap-10 2xl:gap-12 mt-20 xl:mt-24 2xl:mt-28 3xl:pt-40'
       id='stats'
     >
       {statsData.map((stats, i) => {
@@ -21,7 +21,9 @@ const Stats = () => {
             <p className='text-4xl xl:text-5xl 2xl:text-6xl capitalize font-bold lining-nums'>
               {stats.number}
             </p>
-            <p className='text-neutral-300 text-base xl:text-lg 2xl:text-xl'>{stats.label}</p>
+            <p className='text-neutral-300 text-base xl:text-lg 2xl:text-xl'>
+              {stats.label}
+            </p>
           </motion.div>
         );
       })}

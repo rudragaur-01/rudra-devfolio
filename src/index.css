@@ -2,6 +2,7 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant 3xl (@media (min-width: 160rem));
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -97,7 +98,7 @@
   --portfolio-text-primary: oklch(0.98 0 0);
   --portfolio-text-secondary: oklch(0.78 0 0);
   --portfolio-text-tertiary: oklch(0.65 0 0);
-  --portfolio-text-muted: oklch(0.50 0 0);
+  --portfolio-text-muted: oklch(0.5 0 0);
 }
 
 .dark {
