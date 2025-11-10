@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { motion } from 'motion/react';
 import { staggerContainer } from '@/lib/animations';
 import { projectsData } from '@/constants';
@@ -32,6 +37,7 @@ const Projects = () => {
             projectLink={project.projectLink}
             tags={project.tags}
             title={project.title}
+            ownership={project.ownership}
           />
         ))}
       </motion.div>

@@ -1,8 +1,19 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { motion } from 'motion/react';
 import { fadeUp } from '@/lib/animations';
 import type { ProjectType } from '@/types';
 
-const ProjectCard = ({ imgSrc, projectLink, tags, title }: ProjectType) => {
+const ProjectCard = ({
+  imgSrc,
+  projectLink,
+  tags,
+  title,
+  ownership,
+}: ProjectType) => {
   return (
     <motion.a
       href={projectLink}
@@ -16,6 +27,20 @@ const ProjectCard = ({ imgSrc, projectLink, tags, title }: ProjectType) => {
         alt={title}
         className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
       />
+
+      <span
+        className={`absolute top-3 right-3 px-5 py-2 rounded-full text-xs font-semibold transition
+    ${ownership === 'personal' ? 'bg-white text-black' : ''}
+    ${ownership === 'company' ? 'bg-black text-white' : ''}
+    ${ownership === 'freelance' ? 'bg-red-600 text-white' : ''}
+  `}
+      >
+        {ownership === 'personal'
+          ? 'Personal'
+          : ownership === 'company'
+            ? 'Company'
+            : 'Freelance'}
+      </span>
 
       <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition duration-500'></div>
 

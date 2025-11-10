@@ -1,19 +1,30 @@
-import { motion } from 'motion/react';
-
-import { fadeUp } from '@/lib/animations';
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
 
 import type { ToolsType } from '@/types';
+
 const ToolCard = ({ tool }: { tool: ToolsType }) => {
   return (
-    <motion.div
-      variants={fadeUp}
-      className='border border-neutral-700 rounded-md flex justify-center items-center flex-col py-4'
+    <div
+      className='
+        border border-neutral-700 rounded-md 
+        flex justify-center items-center text-center 
+        py-4 px-6 
+        bg-neutral-900/40 
+        text-neutral-200 
+        font-semibold 
+        tracking-wide 
+        hover:bg-neutral-800 
+        hover:text-white 
+        hover:border-neutral-500 
+        transition-all duration-200 
+        shadow-sm hover:shadow-md
+      '
     >
-      <img
-        src={tool.imgSrc}
-        alt={tool.label}
-      />
-    </motion.div>
+      {tool.label}
+    </div>
   );
 };
 

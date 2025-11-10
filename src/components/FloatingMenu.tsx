@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { useState } from 'react';
 import { navLinks } from '@/constants';
 

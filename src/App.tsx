@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
 import Projects from '@/components/Projects';

@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import type { JSX } from 'react';
 
 export type ProjectType = {
@@ -5,6 +10,7 @@ export type ProjectType = {
   title: string;
   tags: string[];
   projectLink: string;
+  ownership: string;
 };
 
 export type ExperienceType = {
@@ -17,12 +23,11 @@ export type ExperienceType = {
 export type ServiceType = {
   title: string;
   desc: string;
-  projects: string;
+  highlight: string;
   icon: JSX.Element;
 };
 
 export type ToolsType = {
-  imgSrc: string;
   label: string;
 };
 

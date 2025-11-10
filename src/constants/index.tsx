@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import type {
   ExperienceType,
   LinksType,
@@ -9,22 +14,20 @@ import type {
 } from '@/types';
 
 import {
+  Code,
+  Layout,
   Briefcase,
-  Facebook,
   FileText,
+  Github,
   Globe,
   Home,
   Instagram,
-  Layers,
+  LinkedinIcon,
   Mail,
   MessageCircle,
-  Palette,
   Rocket,
   Settings,
-  Smartphone,
-  Twitter,
   User,
-  Youtube,
 } from 'lucide-react';
 
 const navLinks: LinksType[] = [
@@ -51,173 +54,163 @@ const navLinks: LinksType[] = [
 
 const socialLinks: LinksType[] = [
   {
-    icon: Facebook,
-    label: 'Facebook',
-    link: '/#',
-  },
-  {
     icon: Instagram,
     label: 'Instagram',
-    link: '/#',
+    link: '/',
   },
   {
-    icon: Twitter,
-    label: 'Twitter',
-    link: '/#',
+    icon: LinkedinIcon,
+    label: 'Linkedin',
+    link: 'https://www.linkedin.com/in/rudragaur3601/',
   },
   {
-    icon: Youtube,
-    label: 'Youtube',
-    link: '/#',
+    icon: Github,
+    label: 'Github',
+    link: 'https://github.com/rudragaur-01',
   },
 ];
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/project-ph-1.jpeg',
+    imgSrc: '/project7.png',
     title: 'Event Management Platform',
-    tags: [
-      'Next.js',
-      'Node.js',
-      'Stripe',
-      'Tailwind CSS',
-      'JWT Auth',
-      'MongoDB',
-    ],
+    tags: ['Frontend', 'Backend', 'Database'],
     projectLink: 'https://github.com/rudragaur-01/event-platform',
+    ownership: 'freelance',
   },
   {
-    imgSrc: '/images/project-ph-2.jpeg',
-    title: 'Budget Manager API',
-    tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Mongoose', 'REST API'],
+    imgSrc: '/project4.png',
+    title: 'Dashboard',
+    tags: ['Frontend'],
     projectLink: 'https://github.com/rudragaur-01',
+    ownership: 'personal',
   },
   {
-    imgSrc: '/images/project-ph-3.jpeg',
-    title: 'CultureNOW – Digital Museum',
-    tags: [
-      'Next js',
-      'Redux',
-      'REST API',
-      'Performance Optimization',
-      'GCP',
-      'Stripe',
-      'Tailwind',
-    ],
-    projectLink: 'https://culturenow.org/',
+    imgSrc: '/project2.png',
+    title: 'Budget Manager API',
+    tags: ['Backend', 'Database'],
+    projectLink: 'https://github.com/rudragaur-01',
+    ownership: 'personal',
   },
+  {
+    imgSrc: '/project1.png',
+    title: 'CultureNOW – Digital Museum',
+    tags: ['Frontend', 'Backend', 'Database'],
+    projectLink: 'https://culturenow.org/',
+    ownership: 'company',
+  },
+
+  {
+    imgSrc: '/project5.png',
+    title: 'Digitas',
+    tags: ['Frontend', 'CMS'],
+    projectLink: 'https://www.diriyah.sa/en',
+    ownership: 'company',
+  },
+
   {
     imgSrc: '/images/project-ph-4.jpeg',
     title: 'Kokoro Financial Platform',
-    tags: ['Next.js', 'Nest.js', 'MUI', 'Postman'],
+    tags: ['Frontend'],
+    projectLink: '',
+    ownership: 'company',
+  },
+  {
+    imgSrc: '/project6.png',
+    title: 'Gathergram',
+    tags: ['Frontend'],
+    projectLink: 'https://www.gathergram.app/about',
+    ownership: 'company',
+  },
+  {
+    imgSrc: '/project3.png',
+    title: 'Sidecup GSAP',
+    tags: ['Frontend', 'GSAP'],
     projectLink: 'https://github.com/rudragaur-01',
+    ownership: 'personal',
+  },
+  {
+    imgSrc: '/project8.png',
+    title: 'NewTrendz',
+    tags: ['Frontend', 'Design'],
+    projectLink: 'https://github.com/rudragaur-01',
+    ownership: 'personal',
   },
 ];
 
 const education: ExperienceType[] = [
   {
-    year: '2018 – 2020',
-    title: 'Bachelor of Computer Science',
-    institute: 'National University of Technology',
-    desc: 'Focused on front-end development, UI design, and web application architecture.',
-  },
-  {
-    year: '2021 – 2022',
-    title: 'Frontend Development Bootcamp',
-    institute: 'Udemy / Online Course',
-    desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects.',
-  },
-  {
-    year: '2023',
-    title: 'Advanced UI/UX Design Course',
-    institute: 'Design+Code',
-    desc: 'Explored advanced design systems, motion design, and accessibility best practices.',
+    year: '2019 - 2023',
+    title: 'Bachelor of Technology',
+    institute: 'Delhi Technical Campus',
+    desc: 'Secured a CGPA of 8.26 / 10',
   },
 ];
 
 const experience: ExperienceType[] = [
   {
-    year: '2021 – 2022',
-    title: 'Frontend Developer Intern',
-    institute: 'PixelForge Studio',
-    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    year: 'Nov 2024 – Present',
+    title: 'Full Stack Developer',
+    institute: 'Frisson Devhub, Noida, India',
+    desc: 'Optimized full-stack web apps, improving load times and scalability, boosting user engagement. Integrated Stripe payments for 50K+ users, ensuring secure and seamless transactions. Built RESTful APIs and connected Strapi CMS with PostgreSQL, cutting content management time by 30%. Collaborated in Agile sprints, delivering new features 20% faster using modular, reusable UI components. Mentored junior developers on clean code, debugging, and project handovers for smooth transitions.',
   },
   {
-    year: '2022 – Present',
-    title: 'UI Engineer',
-    institute: 'Freelance / Remote Work',
-    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
+    year: 'Aug 2024 – Oct 2024',
+    title: 'Full Stack Developer Intern',
+    institute: 'Frisson Devhub, Noida, India',
+    desc: 'Worked with senior developers on frontend fixes and UI improvements using React and Chakra UI. Gained practical experience in Agile workflows, Git version control, and cross-functional collaboration. Contributed to building and testing core modules for client projects, improving understanding of scalable app architecture. Participated in daily stand-ups, code reviews, and sprint planning, strengthening collaboration and debugging skills.',
   },
 ];
 
 const tools: ToolsType[] = [
-  {
-    label: 'Figma',
-    imgSrc: '/images/tools/figma.svg',
-  },
-  {
-    label: 'CSS',
-    imgSrc: '/images/tools/css3.svg',
-  },
-  {
-    label: 'Tailwind CSS',
-    imgSrc: '/images/tools/tailwindcss.svg',
-  },
-  {
-    label: 'React',
-    imgSrc: '/images/tools/react.svg',
-  },
-  {
-    label: 'JavaScript',
-    imgSrc: '/images/tools/javascript.svg',
-  },
-  {
-    label: 'Node.js',
-    imgSrc: '/images/tools/nodejs.svg',
-  },
-  {
-    label: 'Express.js',
-    imgSrc: '/images/tools/expressjs.svg',
-  },
-  {
-    label: 'Mongodb',
-    imgSrc: '/images/tools/mongodb.svg',
-  },
+  { label: 'JavaScript (ES6+)' },
+  { label: 'TypeScript (Basic)' },
+  { label: 'HTML5' },
+  { label: 'CSS3' },
+  { label: 'React.js' },
+  { label: 'Next.js' },
+  { label: 'Redux' },
+  { label: 'Tailwind CSS' },
+  { label: 'Chakra UI' },
+  { label: 'Material UI (MUI)' },
+  { label: 'Node.js' },
+  { label: 'Express.js' },
+  { label: 'Strapi (Headless CMS)' },
+  { label: 'JWT Authentication' },
+  { label: 'PostgreSQL' },
+  { label: 'MongoDB (Basic)' },
+  { label: 'Git & GitHub' },
+  { label: 'Agile Methodologies' },
+  { label: 'Stripe Payment Integration' },
+  { label: 'Component-Driven Development' },
 ];
 
 const services: ServiceType[] = [
   {
-    title: 'Brand Identity',
-    desc: 'I craft modern visual identities that help brands stand out through strong typography, colors, and minimal design.',
-    projects: '32 Projects',
-    icon: <Palette className='h-6 w-6 text-green-400' />,
+    title: 'Full Stack Development',
+    desc: 'I develop scalable, high-performance web applications using modern technologies like Next.js, React, Node.js, and MongoDB.',
+    highlight: 'End-to-End Solutions',
+    icon: <Code className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'UI/UX Design',
-    desc: 'Designing clean, intuitive, and user-friendly interfaces that improve user experience and boost conversions.',
-    projects: '47 Projects',
-    icon: <Layers className='h-6 w-6 text-green-400' />,
+    title: 'Frontend Engineering',
+    desc: 'Creating responsive, accessible, and visually engaging user interfaces with a focus on performance and seamless user experience.',
+    highlight: 'Modern Frontend Stack',
+    icon: <Layout className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'Web Development',
-    desc: 'Building high-performance, SEO-friendly websites using Next.js, Tailwind, and modern web technologies.',
-    projects: '58 Projects',
+    title: 'Backend Development',
+    desc: 'Building secure and efficient APIs, integrating databases, and architecting reliable backend systems using Node.js and Express.',
+    highlight: 'Robust API Architecture',
     icon: <Globe className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'Mobile App Design',
-    desc: 'Creating pixel-perfect app interfaces optimized for both iOS and Android devices with smooth usability.',
-    projects: '21 Projects',
-    icon: <Smartphone className='h-6 w-6 text-green-400' />,
-  },
-  {
-    title: 'Product Launch Strategy',
-    desc: 'Helping startups prepare their digital products for launch with design systems, marketing pages, and assets.',
-    projects: '15 Projects',
+    title: 'Product Launch & Deployment',
+    desc: 'Handling deployment pipelines, cloud configuration, and CI/CD setups to ensure smooth launches and maintainable infrastructure.',
+    highlight: 'Cloud & DevOps Ready',
     icon: <Rocket className='h-6 w-6 text-green-400' />,
   },
 ];
-
 const statsData: StatsType[] = [
   {
     number: '10+',

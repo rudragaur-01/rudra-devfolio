@@ -1,13 +1,12 @@
-import React from 'react';
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { fadeUp } from '@/lib/animations';
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  SparkleIcon,
-  StarIcon,
-} from 'lucide-react';
+import { ChevronLeftIcon, ChevronRightIcon, StarIcon } from 'lucide-react';
 import { testimonials } from '@/constants';
 import SectionHeader from './SectionHeader';
 const Testimonials = () => {
@@ -27,7 +26,7 @@ const Testimonials = () => {
       id='testimonials'
     >
       <SectionHeader
-        subtitle='  Reviews'
+        subtitle='  Testimonials'
         title='What clients say about me'
       />
 

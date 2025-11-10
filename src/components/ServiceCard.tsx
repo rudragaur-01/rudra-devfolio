@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import type { ServiceType } from '@/types';
 
 const ServiceCard = ({ service }: { service: ServiceType }) => {
@@ -11,7 +16,7 @@ const ServiceCard = ({ service }: { service: ServiceType }) => {
           {service.desc}
         </p>
         <span className='text-sm xl:text-base 2xl:text-lg text-neutral-400 font-medium uppercase tracking-wide lining-nums'>
-          {service.projects}
+          {service.highlight}
         </span>
       </div>
       <div className='shrink-0'>{service.icon}</div>

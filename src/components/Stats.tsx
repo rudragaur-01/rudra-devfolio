@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { motion } from 'motion/react';
 import { fadeUp, staggerContainer } from '@/lib/animations';
 import { statsData } from '@/constants';
@@ -8,7 +13,7 @@ const Stats = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.8 }}
       variants={staggerContainer(0.6)}
-      className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 xl:gap-10 2xl:gap-12 mt-20 xl:mt-24 2xl:mt-28 3xl:pt-40'
+      className='grid grid-cols-1  md:grid-cols-3 gap-8 xl:gap-10 2xl:gap-12 mt-20 3xl:pt-20'
       id='stats'
     >
       {statsData.map((stats, i) => {

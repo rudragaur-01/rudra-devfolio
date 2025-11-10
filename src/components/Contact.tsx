@@ -1,150 +1,83 @@
-import { useForm } from 'react-hook-form';
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { motion } from 'motion/react';
-
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { fadeUp } from '@/lib/animations';
-import { Button } from './ui/button';
 import SectionHeader from './SectionHeader';
+import { Button } from './ui/button';
 
-type ContactFormValues = {
-  name: string;
-  company: string;
-  email: string;
-  phone: string;
-  message: string;
-};
 const Contact = () => {
-  const form = useForm<ContactFormValues>({
-    defaultValues: {
-      name: '',
-      company: '',
-      email: '',
-      phone: '',
-      message: '',
-    },
-  });
-  const onSubmit = (values: ContactFormValues) => {
-    console.log(values);
-  };
   return (
     <motion.section
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeUp}
-      className='mt-30 mb-10 scroll-mt-10'
+      className='mt-32 mb-20 scroll-mt-10'
       id='contact'
     >
       <SectionHeader
         subtitle='Contact'
-        title={`Let's make something awesome together`}
+        title={`Let's Make Something Awesome Together`}
       />
-      <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className='w-full mx-auto space-y-6 xl:space-y-8 2xl:space-y-10 mt-12 xl:mt-16 2xl:mt-20'
+
+      <div className='flex justify-center mt-16'>
+        <div
+          className='
+            w-full
+            border border-neutral-700 rounded-2xl 
+            bg-neutral-900/50 
+            p-10 sm:p-12 
+            text-center 
+            shadow-md hover:shadow-xl 
+            transition-all duration-300
+          '
         >
-          <div className='grid grid-cols-1 gap-6 xl:gap-8 2xl:gap-10 md:grid-cols-2'>
-            <FormField
-              control={form.control}
-              name='name'
-              render={({ field }) => (
-                <FormItem className='w-full'>
-                  <FormControl>
-                    <Input
-                      placeholder='Your name'
-                      className='border-0'
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name='company'
-              render={({ field }) => (
-                <FormItem className='w-full'>
-                  <FormControl>
-                    <Input
-                      placeholder='Company name'
-                      className='border-0'
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name='email'
-              render={({ field }) => (
-                <FormItem className='w-full'>
-                  <FormControl>
-                    <Input
-                      type='email'
-                      placeholder='you@email.com'
-                      className='border-0'
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name='phone'
-              render={({ field }) => (
-                <FormItem className='w-full'>
-                  <FormControl>
-                    <Input
-                      type='tel'
-                      placeholder='+1234567890'
-                      className='border-0'
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          <FormField
-            control={form.control}
-            name='message'
-            render={({ field }) => (
-              <FormItem className='w-full'>
-                <FormControl>
-                  <Textarea
-                    placeholder='Tell me about your project...'
-                    className='min-h-[150px] border-0'
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          <p className='text-neutral-300 text-lg sm:text-xl mb-8 leading-relaxed'>
+            I’m always open to connecting, collaborating, or discussing exciting
+            new opportunities. Feel free to reach out!
+          </p>
+
           <Button
-            type='submit'
+            asChild
             size='lg'
-            className='text-base xl:text-lg 2xl:text-xl px-8 xl:px-10 2xl:px-12 py-6 xl:py-7 2xl:py-8 mt-4 xl:mt-6 2xl:mt-8'
+            className='
+              text-base sm:text-lg 
+              px-10 py-6 
+              bg-white text-black 
+              hover:bg-neutral-200 transition-colors
+            '
           >
-            Send Message
+            <a
+              href='https://www.linkedin.com/in/rudragaur3601/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Connect on LinkedIn
+            </a>
           </Button>
-        </form>
-      </Form>
+
+          <div className='flex flex-wrap items-center  justify-center gap-4 mt-8 text-sm text-neutral-400'>
+            <a
+              href='mailto:your.email@example.com'
+              className='hover:text-white transition-colors'
+            >
+              rudrag9870@gmail.com
+            </a>
+            <span>•</span>
+            <a
+              href='https://github.com/rudragaur-01'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='hover:text-white transition-colors'
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </motion.section>
   );
 };

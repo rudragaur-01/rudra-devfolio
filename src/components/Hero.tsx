@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { motion } from 'motion/react';
 import { fadeUp, staggerContainer } from '@/lib/animations';
 import { Button } from './ui/button';
@@ -11,32 +16,39 @@ const Hero = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
       id='/'
+      className='max-w-7xl mx-auto px-4'
     >
       <SectionHeader subtitle='Introduction' />
 
-      <motion.h1
+      <motion.div
         variants={fadeUp}
-        className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-semibold capitalize mt-6 xl:mt-8 2xl:mt-10 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl leading-tight xl:leading-tight 2xl:leading-tight'
+        className='flex flex-col md:flex-row items-center md:items-start gap-8 mt-6 '
       >
-        I'm <span className='text-primary'>Rudra </span>a Full Stack Developer
-        crafting seamless digital experiences
-      </motion.h1>
+        <div className=' lg:hidden md:w-1/3'>
+          <img
+            src='/profilePic.jpg'
+            alt='Rudra Profile'
+            className=' w-60 h-60  rounded-full object-cover flex-shrink-0 '
+          />
+        </div>
+        <div className='lg:max-w-2xl xl:max-w-full text-center md:text-start md:max-w-xl md:w-xl lg:w-full tracking-wider'>
+          <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold capitalize leading-tight'>
+            I'm <span className='text-red-500'>Rudra</span>, a passionate Full
+            Stack Developer dedicated to building seamless, user-friendly
+            digital experiences that make an impact.
+          </h1>
+        </div>
+      </motion.div>
 
       <motion.div
         variants={fadeUp}
-        className='mt-8 xl:mt-10 2xl:mt-12 flex gap-4 xl:gap-6'
+        className='mt-8 flex justify-center md:justify-start'
       >
         <Button
           asChild
           className='text-base xl:text-lg 2xl:text-xl px-6 xl:px-8 2xl:px-10 py-6 xl:py-7 2xl:py-8'
         >
           <a href='#projects'>My Projects</a>
-        </Button>
-        <Button
-          variant='outline'
-          className='text-base xl:text-lg 2xl:text-xl px-6 xl:px-8 2xl:px-10 py-6 xl:py-7 2xl:py-8'
-        >
-          Download CV
         </Button>
       </motion.div>
     </motion.section>

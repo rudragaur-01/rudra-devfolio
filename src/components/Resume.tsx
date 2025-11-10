@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { motion } from 'motion/react';
 import { fadeUp, staggerContainer } from '@/lib/animations';
 import SectionHeader from './SectionHeader';
@@ -65,7 +70,7 @@ const Resume = () => {
           variants={fadeUp}
           className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-10 xl:mb-12 2xl:mb-14 capitalize'
         >
-          My Favorite tools
+          Tools & Technologies
         </motion.h2>
         <motion.div
           initial='hidden'

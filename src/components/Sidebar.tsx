@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 Rudra Gaur
+ * @license Apache-2.0
+ */
+
 import { useState } from 'react';
 import {
   Sheet,
@@ -19,7 +24,6 @@ const Sidebar = () => {
       open={open}
       onOpenChange={setOpen}
     >
-      {/* 👇 Only show menu button on mobile */}
       <SheetTrigger asChild>
         <Button
           variant='ghost'
@@ -31,7 +35,6 @@ const Sidebar = () => {
         </Button>
       </SheetTrigger>
 
-      {/* 👇 Sidebar content */}
       <SheetContent
         side='right'
         className='w-84 bg-neutral-900 text-white py-6 pl-10 md:hidden flex flex-col justify-between'
@@ -62,7 +65,6 @@ const Sidebar = () => {
           </nav>
         </div>
 
-        {/* 👇 This section sticks to bottom */}
         <div className='mt-10'>
           <p className='pb-2'>SOCIALS</p>
           <div className='flex gap-3 text-neutral-500'>
