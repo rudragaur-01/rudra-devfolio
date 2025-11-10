@@ -16,7 +16,7 @@ const Hero = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
       id='/'
-      className='max-w-7xl mx-auto px-4'
+      className='max-w-7xl mx-auto px-4 '
     >
       <SectionHeader subtitle='Introduction' />
 
@@ -42,7 +42,7 @@ const Hero = () => {
 
       <motion.div
         variants={fadeUp}
-        className='mt-8 flex justify-center md:justify-start'
+        className='mt-8 flex justify-center lg:justify-start'
       >
         <Button
           asChild

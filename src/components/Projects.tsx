@@ -32,7 +32,7 @@ const Projects = () => {
         key highlights.
       </motion.p>
       <motion.div
-        className='grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12 mt-12 xl:mt-16 2xl:mt-20'
+        className='grid md:grid-cols-2 3xl:grid-cols-3 gap-9 xl:gap-12 2xl:gap-14 mt-12 xl:mt-16 2xl:mt-20'
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.3 }}
