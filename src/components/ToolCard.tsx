@@ -3,11 +3,13 @@
  * @license Apache-2.0
  */
 
+import { motion } from 'motion/react';
 import type { ToolsType } from '@/types';
+import { fadeUp } from '@/lib/animations';
 
 const ToolCard = ({ tool }: { tool: ToolsType }) => {
   return (
-    <div
+    <motion.div
       className='
         border border-neutral-700 rounded-md 
         flex justify-center items-center text-center 
@@ -19,12 +21,11 @@ const ToolCard = ({ tool }: { tool: ToolsType }) => {
         hover:bg-neutral-800 
         hover:text-white 
         hover:border-neutral-500 
-        transition-all duration-200 
         shadow-sm hover:shadow-md
       '
     >
       {tool.label}
-    </div>
+    </motion.div>
   );
 };
 

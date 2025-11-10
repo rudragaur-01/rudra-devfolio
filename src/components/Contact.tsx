@@ -13,7 +13,7 @@ const Contact = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.02 }}
       variants={fadeUp}
       className='mt-32 mb-20 scroll-mt-10'
       id='contact'

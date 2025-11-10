@@ -11,8 +11,8 @@ const Stats = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.8 }}
-      variants={staggerContainer(0.6)}
+      viewport={{ once: true, amount: 0.02 }}
+      variants={staggerContainer(0.3)}
       className='grid grid-cols-1  md:grid-cols-3 gap-8 xl:gap-10 2xl:gap-12 mt-20 3xl:pt-20'
       id='stats'
     >

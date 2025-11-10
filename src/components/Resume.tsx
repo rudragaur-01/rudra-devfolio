@@ -15,7 +15,7 @@ const Resume = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.03 }}
       variants={staggerContainer(0)}
       className='mt-30 scroll-mt-10 3xl:pt-30'
       id='resume'
@@ -72,8 +72,8 @@ const Resume = () => {
         <motion.div
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: true, amount: 0.3 }}
-          variants={staggerContainer(0.5)}
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeUp}
           className='grid grid-cols-2 gap-6 xl:gap-8 2xl:gap-10 sm:grid-cols-3 md:grid-cols-5'
         >
           {tools.map((tool, i) => (

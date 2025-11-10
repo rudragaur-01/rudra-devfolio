@@ -20,7 +20,7 @@ const ProjectCard = ({
       target='_blank'
       rel='noopener noreferrer'
       variants={fadeUp}
-      className='group block overflow-hidden rounded-xl border border-neutral-700 bg-neutral-900/40 hover:bg-neutral-800/60 transition-all duration-300 '
+      className='group block overflow-hidden rounded-xl border border-neutral-700 bg-neutral-900/40 hover:bg-neutral-800/60  '
     >
       {/* Image Section */}
       <div className='relative overflow-hidden rounded-t-xl'>

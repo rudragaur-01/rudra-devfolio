@@ -20,7 +20,7 @@ const Testimonials = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.3 }}
       variants={fadeUp}
       className='mt-30 scroll-mt-10 3xl:pt-30'
       id='testimonials'

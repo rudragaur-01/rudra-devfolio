@@ -14,7 +14,7 @@ const Projects = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.02 }}
       variants={staggerContainer(0)}
       className='mt-30 scroll-mt-10 3xl:pt-30'
       id='projects'
@@ -33,10 +33,10 @@ const Projects = () => {
       </motion.p>
       <motion.div
         className='grid md:grid-cols-2 3xl:grid-cols-3 gap-9 xl:gap-12 2xl:gap-14 mt-12 xl:mt-16 2xl:mt-20'
-        initial='hidden'
         whileInView='visible'
-        viewport={{ once: true, amount: 0.3 }}
-        variants={staggerContainer(0.5)}
+        initial='hidden'
+        viewport={{ once: true, amount: 0.02 }}
+        variants={staggerContainer(0.3)}
       >
         {projectsData.map((project, i) => (
           <ProjectCard

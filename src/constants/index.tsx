@@ -45,7 +45,7 @@ const navLinks: LinksType[] = [
   },
   { label: 'Resume', link: '#resume', icon: FileText },
   {
-    label: 'Reviews',
+    label: 'Testimonials',
     link: '#testimonials',
     icon: MessageCircle,
   },
