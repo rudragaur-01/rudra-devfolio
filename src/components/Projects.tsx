@@ -4,7 +4,7 @@
  */
 
 import { motion } from 'motion/react';
-import { staggerContainer } from '@/lib/animations';
+import { fadeUp, staggerContainer } from '@/lib/animations';
 import { projectsData } from '@/constants';
 import SectionHeader from './SectionHeader';
 import ProjectCard from './ProjectCard';
@@ -23,6 +23,14 @@ const Projects = () => {
         subtitle='Projects'
         title='My Featured Projects'
       />
+      <motion.p
+        variants={fadeUp}
+        className='mt-4 xl:mt-6 2xl:mt-8 text-neutral-400 max-w-3xl xl:max-w-4xl 2xl:max-w-5xl  md:text-left mx-auto md:mx-0 leading-relaxed text-base xl:text-lg 2xl:text-xl'
+      >
+        I've worked on a wide variety of projects — from sleek, responsive
+        websites to dynamic full-stack applications. Here's a glimpse of some
+        key highlights.
+      </motion.p>
       <motion.div
         className='grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12 mt-12 xl:mt-16 2xl:mt-20'
         initial='hidden'
