@@ -5,8 +5,6 @@
 
 import { motion } from 'motion/react';
 import type { ToolsType } from '@/types';
-import { fadeUp } from '@/lib/animations';
-
 const ToolCard = ({ tool }: { tool: ToolsType }) => {
   return (
     <motion.div
