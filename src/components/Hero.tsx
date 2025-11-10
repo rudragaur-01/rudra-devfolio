@@ -14,7 +14,7 @@ const Hero = () => {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
-      variants={staggerContainer(0.2)}
+      variants={staggerContainer(0)}
       id='/'
       className='max-w-7xl mx-auto px-4 '
     >
@@ -32,11 +32,16 @@ const Hero = () => {
           />
         </div>
         <div className='lg:max-w-2xl xl:max-w-full text-center md:text-start md:max-w-xl md:w-xl lg:w-full tracking-wider'>
-          <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold capitalize leading-tight'>
-            I'm <span className='text-red-500'>Rudra</span>, a passionate Full
-            Stack Developer dedicated to building seamless, user-friendly
-            digital experiences that make an impact.
+          <h1 className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight text-white'>
+            Code that <span className='text-red-500'>connects</span>, design
+            that <span className='text-red-500'>inspires</span>.
           </h1>
+
+          <h2 className='text-neutral-300 mt-4 text-base sm:text-lg md:text-2xl font-medium max-w-2xl mx-auto md:mx-0 leading-relaxed'>
+            I'm <span className='text-white font-semibold'>Rudra Gaur</span>, a
+            Full Stack Developer crafting seamless, human-centered web
+            experiences through design and technology.
+          </h2>
         </div>
       </motion.div>
 
