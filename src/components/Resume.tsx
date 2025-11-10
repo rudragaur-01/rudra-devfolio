@@ -28,10 +28,7 @@ const Resume = () => {
         variants={fadeUp}
         className='mt-12 xl:mt-16 2xl:mt-20 text-neutral-300 text-base xl:text-lg 2xl:text-xl'
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-        labore. Quam voluptatum at minus repudiandae nesciunt autem laudantium
-        tempore illum, officia esse, nam quidem itaque quis voluptas, porro unde
-        blanditiis
+        A quick overview of my education and professional experience
       </motion.p>
       <div className='grid gap-x-8 xl:gap-x-12 2xl:gap-x-16 my-16 xl:my-20 2xl:my-24 md:grid-cols-2'>
         <motion.div
