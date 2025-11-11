@@ -38,7 +38,7 @@ export const App = () => {
   }, []);
 
   return (
-    <div className='flex flex-col w-full '>
+    <div className='flex mx-auto justify-center flex-col w-full '>
       <Hero />
       <Stats />
       <Projects />
