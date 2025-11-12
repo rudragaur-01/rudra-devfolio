@@ -163,8 +163,8 @@ const experience: ExperienceType[] = [
 ];
 
 const tools: ToolsType[] = [
-  { label: 'JavaScript (ES6+)' },
-  { label: 'TypeScript (Basic)' },
+  { label: 'JavaScript ' },
+  { label: 'TypeScript ' },
   { label: 'HTML5' },
   { label: 'CSS3' },
   { label: 'React.js' },
@@ -172,17 +172,16 @@ const tools: ToolsType[] = [
   { label: 'Redux' },
   { label: 'Tailwind CSS' },
   { label: 'Chakra UI' },
-  { label: 'Material UI (MUI)' },
+  { label: 'Material UI ' },
   { label: 'Node.js' },
   { label: 'Express.js' },
-  { label: 'Strapi (Headless CMS)' },
+  { label: 'Strapi ' },
   { label: 'JWT Authentication' },
   { label: 'PostgreSQL' },
   { label: 'MongoDB (Basic)' },
   { label: 'Git & GitHub' },
   { label: 'Agile Methodologies' },
-  { label: 'Stripe Payment Integration' },
-  { label: 'Component-Driven Development' },
+  { label: 'Stripe  Integration' },
 ];
 
 const services: ServiceType[] = [
@@ -228,24 +227,24 @@ const statsData: StatsType[] = [
 
 const testimonials: TestimonialsType[] = [
   {
-    name: 'Alex Tomato',
-    role: 'Brand Manager at Instant Design',
+    name: 'Rahul Sharma',
+    role: 'Client',
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
-    text: 'Rudra’s attention to detail and ability to turn complex ideas into polished solutions is exceptional. He consistently exceeded expectations and delivered high-quality work.',
+    text: 'Rudra delivered my project exactly how I envisioned it. He quickly understood the requirements and built a fast, clean, and responsive web application. Working with him was effortless and highly professional.',
     link: '#',
   },
   {
-    name: 'Sara Bloom',
-    role: 'Founder at Bloom Agency',
+    name: 'Sneha Kapoor',
+    role: 'Client',
     image: 'https://randomuser.me/api/portraits/women/65.jpg',
-    text: 'Working with Rudra was seamless. He is professional, responsive, and highly skilled, bringing my brand vision to life with precision and creativity.',
+    text: 'Collaborating with Rudra was a great experience. He has a strong sense of design and functionality, and his ability to communicate clearly made the entire process smooth from start to finish.',
     link: '#',
   },
   {
-    name: 'John Park',
-    role: 'CEO at PixelFlow',
+    name: 'Aditya Mehra',
+    role: 'Colleague',
     image: 'https://randomuser.me/api/portraits/men/45.jpg',
-    text: 'Rudra handled every detail flawlessly, from UI/UX design to front-end implementation. His problem-solving skills and dedication made the project smooth and enjoyable.',
+    text: 'I’ve had the chance to work with Rudra on multiple full-stack projects. He consistently delivers clean code, efficient solutions, and always helps the team stay organized and on track.',
     link: '#',
   },
 ];

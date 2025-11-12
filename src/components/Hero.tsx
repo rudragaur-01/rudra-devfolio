@@ -28,7 +28,7 @@ const Hero = () => {
           <img
             src='/profilePic.jpg'
             alt='Rudra Profile'
-            className=' w-50 h-50 md:w-60 md:h-60 2xl:w-70 2xl:h-70 rounded-full object-cover shrink-0'
+            className=' w-50 h-50 md:w-65 md:h-65 2xl:w-70 2xl:h-70 rounded-full object-cover '
           />
         </div>
 

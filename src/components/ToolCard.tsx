@@ -9,17 +9,19 @@ const ToolCard = ({ tool }: { tool: ToolsType }) => {
   return (
     <motion.div
       className='
-        border border-neutral-700 rounded-md 
+        border border-neutral-700 rounded-xl 
         flex justify-center items-center text-center 
+        text-sm
         py-4 px-6 
-        bg-neutral-900/40 
-        text-neutral-200 
+        bg-white 
+        text-black
         font-semibold 
         tracking-wide 
         hover:bg-neutral-800 
         hover:text-white 
         hover:border-neutral-500 
         shadow-sm hover:shadow-md
+        lg:text-md 3xl:text-lg
       '
     >
       {tool.label}

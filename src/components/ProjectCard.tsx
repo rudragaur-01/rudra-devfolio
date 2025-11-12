@@ -6,6 +6,7 @@
 import { motion } from 'motion/react';
 import { fadeUp } from '@/lib/animations';
 import type { ProjectType } from '@/types';
+import { Github, Globe } from 'lucide-react';
 
 const ProjectCard = ({
   imgSrc,
@@ -14,13 +15,12 @@ const ProjectCard = ({
   title,
   ownership,
 }: ProjectType) => {
+  const isGithub = projectLink?.includes('github.com');
+
   return (
-    <motion.a
-      href={projectLink}
-      target='_blank'
-      rel='noopener noreferrer'
+    <motion.div
       variants={fadeUp}
-      className='group block overflow-hidden rounded-xl border border-neutral-700 bg-neutral-900/40 hover:bg-neutral-800/60  '
+      className='group block overflow-hidden rounded-xl border border-neutral-700 bg-neutral-900/40 hover:bg-neutral-800/60 transition-all duration-300'
     >
       {/* Image Section */}
       <div className='relative overflow-hidden rounded-t-xl'>
@@ -31,11 +31,11 @@ const ProjectCard = ({
         />
 
         <span
-          className={`absolute top-3 right-3 px-4 py-1.5 rounded-full text-xs font-semibold shadow-md transition
+          className={`absolute top-3 right-3 px-4 py-2 rounded-full text-xs font-semibold shadow-md transition
             ${ownership === 'personal' ? 'bg-white text-black' : ''}
             ${ownership === 'company' ? 'bg-black text-white' : ''}
-            ${ownership === 'freelance' ? 'bg-red-600 text-white' : ''}
-          `}
+            ${ownership === 'freelance' ? 'bg-white text-black' : ''}
+  `}
         >
           {ownership === 'personal'
             ? 'Personal'
@@ -60,18 +60,40 @@ const ProjectCard = ({
           </p>
         </div>
 
-        <div className='flex flex-wrap gap-2'>
-          {tags.map((tag, i) => (
-            <span
-              key={i}
-              className='bg-neutral-800/70 text-neutral-300 py-1 px-2 rounded-md text-xs sm:text-sm hover:bg-primary hover:text-black transition'
+        {/* Tags + Button */}
+        <div className='flex justify-between items-center flex-wrap gap-3 pt-2'>
+          <div className='flex flex-wrap gap-2'>
+            {tags.map((tag, i) => (
+              <span
+                key={i}
+                className='bg-neutral-800/70 text-neutral-300 py-1 px-2 rounded-md text-xs sm:text-sm hover:bg-primary hover:text-black transition'
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {projectLink && (
+            <a
+              href={projectLink}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-flex items-center gap-2 rounded-lg border border-neutral-700 bg-neutral-100 px-3 py-1.5 text-xs sm:text-sm font-medium text-black transition hover:bg-primary hover:text-black'
             >
-              {tag}
-            </span>
-          ))}
+              {isGithub ? (
+                <>
+                  <Github className='w-4 h-4' /> GitHub
+                </>
+              ) : (
+                <>
+                  <Globe className='w-4 h-4' /> Website
+                </>
+              )}
+            </a>
+          )}
         </div>
       </div>
-    </motion.a>
+    </motion.div>
   );
 };
 
