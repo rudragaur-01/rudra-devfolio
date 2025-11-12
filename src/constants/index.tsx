@@ -136,6 +136,13 @@ const projectsData: ProjectType[] = [
     projectLink: 'https://github.com/rudragaur-01',
     ownership: 'personal',
   },
+  {
+    imgSrc: '/project9.png',
+    title: 'Drag & Drop Interface',
+    tags: ['Frontend', 'React', 'UI'],
+    projectLink: 'https://dragula-drag-drop.vercel.app/',
+    ownership: 'personal',
+  },
 ];
 
 const education: ExperienceType[] = [
